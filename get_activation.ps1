@@ -33,9 +33,9 @@ function CheckFile {
 
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
 $URLs = @(
-    'https://raw.githubusercontent.com/alissonlucas02/activation1/refs/heads/main/activation1.cmd?token=GHSAT0AAAAAADBFP2SK5ZW6IWHRLISKPGBAZ7D7WBA',
-    'https://raw.githubusercontent.com/alissonlucas02/activation2/refs/heads/main/MAS_AIO.cmd?token=GHSAT0AAAAAADBFP2SL6N43ZEILB3KXYCOQZ7D7WSA',
-    'https://raw.githubusercontent.com/alissonlucas02/activation3/refs/heads/main/activation3.cmd?token=GHSAT0AAAAAADBFP2SLQ34GRBKYFNL56AGOZ7D7VRQ'
+    'https://raw.githubusercontent.com/alissonlucas02/activation1/refs/heads/main/activation1.cmd',
+    'https://raw.githubusercontent.com/alissonlucas02/activation2/refs/heads/main/MAS_AIO.cmd',
+    'https://raw.githubusercontent.com/alissonlucas02/activation3/refs/heads/main/activation3.cmd'
 )
 
 foreach ($URL in $URLs | Sort-Object { Get-Random }) {
